@@ -61,7 +61,7 @@ public class Main {
         for (Res res : result) {
             raf.seek(res.address); // Переходим в нужное место в файле
             line = raf.readLine();
-            System.out.println(line.split(",")[col] + " | " + line); // Выводим результат
+            System.out.println(line.split(",")[col] + " [" + line + "]"); // Выводим результат
         }
     }
 
